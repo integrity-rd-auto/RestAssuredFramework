@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="3728" started-at="2020-06-23T16:26:26 IST" finished-at="2020-06-23T16:26:30 IST">
+  <suite name="Suite" duration-ms="3752" started-at="2020-06-23T16:34:50 IST" finished-at="2020-06-23T16:34:54 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="3728" started-at="2020-06-23T16:26:26 IST" finished-at="2020-06-23T16:26:30 IST">
+    <test name="Test" duration-ms="3752" started-at="2020-06-23T16:34:50 IST" finished-at="2020-06-23T16:34:54 IST">
       <class name="UserTestCases.GetMultiUserTest">
-        <test-method status="PASS" signature="baseTest()[pri:0, instance:UserTestCases.GetMultiUserTest@26aa12dd]" name="baseTest" is-config="true" duration-ms="3" started-at="2020-06-23T16:26:30 IST" finished-at="2020-06-23T16:26:30 IST">
+        <test-method status="PASS" signature="baseTest()[pri:0, instance:UserTestCases.GetMultiUserTest@26aa12dd]" name="baseTest" is-config="true" duration-ms="4" started-at="2020-06-23T16:34:53 IST" finished-at="2020-06-23T16:34:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseTest -->
-        <test-method status="PASS" signature="getAPITest002()[pri:0, instance:UserTestCases.GetMultiUserTest@26aa12dd]" name="getAPITest002" duration-ms="578" started-at="2020-06-23T16:26:30 IST" finished-at="2020-06-23T16:26:30 IST">
+        <test-method status="PASS" signature="getAPITest002()[pri:0, instance:UserTestCases.GetMultiUserTest@26aa12dd]" name="getAPITest002" duration-ms="543" started-at="2020-06-23T16:34:53 IST" finished-at="2020-06-23T16:34:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAPITest002 -->
       </class> <!-- UserTestCases.GetMultiUserTest -->
       <class name="UserTestCases.GetSingleUserTests">
-        <test-method status="PASS" signature="baseTest()[pri:0, instance:UserTestCases.GetSingleUserTests@131276c2]" name="baseTest" is-config="true" duration-ms="375" started-at="2020-06-23T16:26:27 IST" finished-at="2020-06-23T16:26:27 IST">
+        <test-method status="PASS" signature="baseTest()[pri:0, instance:UserTestCases.GetSingleUserTests@131276c2]" name="baseTest" is-config="true" duration-ms="464" started-at="2020-06-23T16:34:50 IST" finished-at="2020-06-23T16:34:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseTest -->
-        <test-method status="PASS" signature="getAPITest001()[pri:0, instance:UserTestCases.GetSingleUserTests@131276c2]" name="getAPITest001" duration-ms="2603" started-at="2020-06-23T16:26:27 IST" finished-at="2020-06-23T16:26:30 IST">
+        <test-method status="PASS" signature="getAPITest001()[pri:0, instance:UserTestCases.GetSingleUserTests@131276c2]" name="getAPITest001" duration-ms="2574" started-at="2020-06-23T16:34:50 IST" finished-at="2020-06-23T16:34:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAPITest001 -->

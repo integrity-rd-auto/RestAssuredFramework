@@ -18,12 +18,37 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 //import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class Reporting extends TestListenerAdapter {
+public class Reporting2 extends TestListenerAdapter {
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports extent;
 	public ExtentTest logger;
 
-	private static String resultpath = "Extent-Report";
+	private static String resultpath = getResultPath();
+
+	public static void deleteDirectory(File directory) {
+		if (directory.exists()) {
+			File[] files = directory.listFiles();
+			if (null != files) {
+				for (int i = 0; i < files.length; i++) {
+					System.out.println(files[i].getName());
+					if (files[i].isDirectory()) {
+						deleteDirectory(files[i]);
+					} else {
+						files[i].delete();
+					}
+				}
+			}
+		}
+	}
+
+	private static String getResultPath() {
+
+		resultpath = "test";// new SimpleDateFormat("yyyy-MM-dd hh-mm.ss").format(new Date());
+		if (!new File(resultpath).isDirectory()) {
+			new File(resultpath);
+		}
+		return resultpath;
+	}
 
 	String ReportLocation = "test-output/Report/" + resultpath + "/";
 

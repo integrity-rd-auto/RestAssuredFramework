@@ -112,3 +112,15 @@
 2020-06-23 16:26:30,082 [main] INFO RestAssuredFramework - Response time : 1340
 2020-06-23 16:26:30,085 [main] INFO RestAssuredFramework - Response code : 200
 2020-06-23 16:26:30,086 [main] INFO RestAssuredFramework - ###### getAPITest001 Ends ######
+2020-06-23 16:32:47,700 [main] INFO RestAssuredFramework - ###### getAPITest001 Starts ######
+2020-06-23 16:32:50,072 [main] INFO RestAssuredFramework - Response time : 1245
+2020-06-23 16:32:50,072 [main] INFO RestAssuredFramework - Response code : 200
+2020-06-23 16:32:50,073 [main] INFO RestAssuredFramework - ###### getAPITest001 Ends ######
+2020-06-23 16:33:52,177 [main] INFO RestAssuredFramework - ###### getAPITest001 Starts ######
+2020-06-23 16:33:55,398 [main] INFO RestAssuredFramework - Response time : 1542
+2020-06-23 16:33:55,399 [main] INFO RestAssuredFramework - Response code : 200
+2020-06-23 16:33:55,400 [main] INFO RestAssuredFramework - ###### getAPITest001 Ends ######
+2020-06-23 16:34:50,953 [main] INFO RestAssuredFramework - ###### getAPITest001 Starts ######
+2020-06-23 16:34:53,522 [main] INFO RestAssuredFramework - Response time : 1449
+2020-06-23 16:34:53,522 [main] INFO RestAssuredFramework - Response code : 200
+2020-06-23 16:34:53,523 [main] INFO RestAssuredFramework - ###### getAPITest001 Ends ######
