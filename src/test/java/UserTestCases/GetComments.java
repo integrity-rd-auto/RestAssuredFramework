@@ -1,30 +1,38 @@
 package UserTestCases;
-
-import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import Base.BaseTest;
 import apiConfig.APIPathConfig;
+import apiVerifications.APIVerification;
 import io.restassured.RestAssured;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 
 public class GetComments extends BaseTest {
 
+	// Response response;
+
+	@BeforeClass
+
+	public void getRequest() {
+
+		response = RestAssured.given().when().get(APIPathConfig.GET_SINGLE_USER);
+
+	}
+
 	@Test
 
-	public void getAPITest001() {
+	public void validateStatusCode() {
 
-		logger.info("###### getAPITest001 Starts ######");
+		APIVerification.responseCodeValiddation(response, 200);
 
-		Response response = RestAssured.given().when().get(APIPathConfig.GET_SINGLE_USER);
-		String s = response.getBody().asString();
+		logger.info("###### getAPITest001 Ends ######");
 
-		logger.info("Response time : " + response.time());
+	}
 
-		logger.info("Response code : " + response.statusCode());
+	@Test
 
-		Assert.assertEquals(response.statusCode(), 201);
+	public void validateResponseTime() {
+
+		APIVerification.responseTimeValiddation(response);
 
 		logger.info("###### getAPITest001 Ends ######");
 

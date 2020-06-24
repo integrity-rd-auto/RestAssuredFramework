@@ -20,9 +20,9 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class Reporting extends TestListenerAdapter {
-	public ExtentHtmlReporter htmlReporter;
-	public ExtentReports extent;
-	public ExtentTest logger;
+	public static ExtentHtmlReporter htmlReporter;
+	public static ExtentReports extent;
+	public static ExtentTest logger;
 
 	private static String resultpath = "Extent-Report";
 
@@ -64,8 +64,6 @@ public class Reporting extends TestListenerAdapter {
 		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
 		logger.log(Status.INFO, MarkupHelper.createLabel("This is a Failed Test", ExtentColor.RED));
 		logger.log(Status.FAIL, tr.getThrowable());
-		
-
 	}
 
 	public void onTestSkipped(ITestResult tr) {

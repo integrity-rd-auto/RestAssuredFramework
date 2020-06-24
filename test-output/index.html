@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,15 +102,29 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="UserTestCases.GetComments" hash-for-method="getAPITest001">getAPITest001</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="UserTestCases.PostSingleUser" hash-for-method="postAPITest003">postAPITest003</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="UserTestCases.GetComments" hash-for-method="validateResponseTime">validateResponseTime</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="UserTestCases.PostSingleUser" hash-for-method="validateStatusCode">validateStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="UserTestCases.GetComments" hash-for-method="validateStatusCode">validateStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -130,38 +144,49 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getAPITest001">
-                  </a> <!-- getAPITest001 -->
-                  <span class="method-name">getAPITest001</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [201] but found [200]
-	at UserTestCases.GetComments.getAPITest001(GetComments.java:27)
+                  <a name="validateResponseTime">
+                  </a> <!-- validateResponseTime -->
+                  <span class="method-name">validateResponseTime</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at apiVerifications.APIVerification.responseTimeValiddation(APIVerification.java:31)
+	at UserTestCases.GetComments.validateResponseTime(GetComments.java:35)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 32 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">UserTestCases.GetComments</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateStatusCode">
+                  </a> <!-- validateStatusCode -->
+                  <span class="method-name">validateStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">UserTestCases.PostSingleUser</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="postAPITest003">
-                  </a> <!-- postAPITest003 -->
-                  <span class="method-name">postAPITest003</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [201]
-	at UserTestCases.PostSingleUser.postAPITest003(PostSingleUser.java:35)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
+                  <a name="validateStatusCode">
+                  </a> <!-- validateStatusCode -->
+                  <span class="method-name">validateStatusCode</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -218,20 +243,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getAPITest001')
+data.setCell(0, 1, 'validateResponseTime')
 data.setCell(0, 2, 'UserTestCases.GetComments')
-data.setCell(0, 3, 1346);
+data.setCell(0, 3, 10);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'postAPITest003')
-data.setCell(1, 2, 'UserTestCases.PostSingleUser')
-data.setCell(1, 3, 351);
+data.setCell(1, 1, 'validateStatusCode')
+data.setCell(1, 2, 'UserTestCases.GetComments')
+data.setCell(1, 3, 5);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateStatusCode')
+data.setCell(2, 2, 'UserTestCases.PostSingleUser')
+data.setCell(2, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 17 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -262,24 +291,34 @@ return data;
                 <span class="method-name">baseTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getRequest</span>
+                <span class="method-start">480 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">getAPITest001</span>
-                <span class="method-start">375 ms</span>
+                <span class="method-name">validateResponseTime</span>
+                <span class="method-start">1750 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateStatusCode</span>
+                <span class="method-start">1778 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">UserTestCases.PostSingleUser</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">baseTest</span>
-                <span class="method-start">1746 ms</span>
+                <span class="method-start">1786 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">postRequest</span>
+                <span class="method-start">1789 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">postAPITest003</span>
-                <span class="method-start">1750 ms</span>
+                <span class="method-name">validateStatusCode</span>
+                <span class="method-start">2047 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

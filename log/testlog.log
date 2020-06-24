@@ -79,3 +79,100 @@
 2020-06-24 09:19:44,439 - RestAssuredFramework -INFO - ###### Response Generated ######
 2020-06-24 09:19:44,440 - RestAssuredFramework -INFO - Response code : 201
 2020-06-24 09:19:44,440 - RestAssuredFramework -INFO - ###### If Response Code is other than 201 , Tests fails ######
+2020-06-24 17:06:02,060 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:06:44,715 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:06:46,096 - RestAssuredFramework -INFO - Response time : 773
+2020-06-24 17:06:46,096 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:09:01,581 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:09:02,864 - RestAssuredFramework -INFO - Response time : 697
+2020-06-24 17:09:02,864 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:09:02,868 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:11:18,539 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:11:19,734 - RestAssuredFramework -INFO - Response time : 765
+2020-06-24 17:11:19,734 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:11:19,739 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:14:13,927 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:14:15,152 - RestAssuredFramework -INFO - Response time : 794
+2020-06-24 17:14:15,153 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:14:15,158 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:14:15,181 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:14:15,444 - RestAssuredFramework -INFO - ###### Response Generated ######
+2020-06-24 17:14:15,444 - RestAssuredFramework -INFO - Response code : 201
+2020-06-24 17:14:15,444 - RestAssuredFramework -INFO - ###### If Response Code is other than 201 , Tests fails ######
+2020-06-24 17:15:48,693 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:15:49,884 - RestAssuredFramework -INFO - Response time : 764
+2020-06-24 17:15:49,885 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:15:49,943 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:15:50,208 - RestAssuredFramework -INFO - ###### Response Generated ######
+2020-06-24 17:15:50,208 - RestAssuredFramework -INFO - Response code : 201
+2020-06-24 17:15:50,209 - RestAssuredFramework -INFO - ###### If Response Code is other than 201 , Tests fails ######
+2020-06-24 17:18:53,037 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:18:54,273 - RestAssuredFramework -INFO - Response time : 679
+2020-06-24 17:18:54,273 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:18:54,281 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:18:54,308 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:18:54,701 - RestAssuredFramework -INFO - ###### Response Generated ######
+2020-06-24 17:18:54,702 - RestAssuredFramework -INFO - Response code : 201
+2020-06-24 17:18:54,702 - RestAssuredFramework -INFO - ###### If Response Code is other than 201 , Tests fails ######
+2020-06-24 17:18:54,702 - RestAssuredFramework -INFO - ###### If Response Code is other than 201 , Tests fails ######
+2020-06-24 17:18:54,704 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:20:27,702 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:20:28,853 - RestAssuredFramework -INFO - Response time : 720
+2020-06-24 17:20:28,853 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:20:28,856 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:20:28,907 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:20:29,197 - RestAssuredFramework -INFO - ###### Response Generated ######
+2020-06-24 17:20:29,198 - RestAssuredFramework -INFO - Response code : 201
+2020-06-24 17:20:29,198 - RestAssuredFramework -INFO - ###### If Response Code is other than 201 , Tests fails ######
+2020-06-24 17:20:29,198 - RestAssuredFramework -INFO - ###### If Response Code is other than 201 , Tests fails ######
+2020-06-24 17:20:29,199 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:21:34,528 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:21:35,811 - RestAssuredFramework -INFO - Response time : 838
+2020-06-24 17:21:35,812 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:21:35,839 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:21:36,082 - RestAssuredFramework -INFO - ###### Response Generated ######
+2020-06-24 17:21:36,082 - RestAssuredFramework -INFO - Response code : 201
+2020-06-24 17:21:36,083 - RestAssuredFramework -INFO - ###### If Response Code is other than 201 , Tests fails ######
+2020-06-24 17:21:36,083 - RestAssuredFramework -INFO - ###### If Response Code is other than 201 , Tests fails ######
+2020-06-24 17:21:36,084 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:24:24,418 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:24:25,708 - RestAssuredFramework -INFO - Response time : 659
+2020-06-24 17:24:25,709 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:24:25,714 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:24:25,740 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:25:44,127 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:25:45,430 - RestAssuredFramework -INFO - Response time : 700
+2020-06-24 17:25:45,430 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:25:45,464 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:27:31,082 - RestAssuredFramework -INFO - ###### getAPITest001 Starts ######
+2020-06-24 17:27:32,326 - RestAssuredFramework -INFO - Response time : 678
+2020-06-24 17:27:32,326 - RestAssuredFramework -INFO - Response code : 200
+2020-06-24 17:27:32,329 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:27:32,348 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:30:16,658 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:35:51,833 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:37:04,213 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:38:48,256 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:39:12,133 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:40:24,519 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:40:47,197 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:42:03,023 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:43:14,046 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:44:00,430 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:45:15,114 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:45:42,038 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 17:51:34,736 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:51:34,748 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:52:03,006 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:52:53,632 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 17:52:53,906 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 18:09:37,266 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 18:09:37,632 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 18:10:19,824 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 18:10:19,847 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 18:10:20,143 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 18:12:17,873 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 18:12:17,894 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 18:12:18,177 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
+2020-06-24 18:13:22,122 - RestAssuredFramework -INFO - ###### getAPITest001 Ends ######
+2020-06-24 18:13:22,390 - RestAssuredFramework -INFO - ###### postAPITest003 Starts ######
