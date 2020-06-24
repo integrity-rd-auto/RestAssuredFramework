@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="UserTestCases.GetMultiUserTest">
+      <class name="UserTestCases.GetSingleUserTests">
         <methods>
-          <include name="getAPITest002"/>
           <include name="baseTest"/>
+          <include name="getAPITest001"/>
         </methods>
-      </class> <!-- UserTestCases.GetMultiUserTest -->
+      </class> <!-- UserTestCases.GetSingleUserTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -15,6 +15,8 @@ public class GetMultiUserTest extends BaseTest {
 	@Test
 
 	public void getAPITest002() {
+		
+		logger.info("###### getAPITest002 Starts ######");
 
 		Response response = RestAssured.given().headers(HeaderConfig.defaultHeaders()).when().get(APIPathConfig.GET_LIST_USERS);
 		String s = response.getBody().asString();

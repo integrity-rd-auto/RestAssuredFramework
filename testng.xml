@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<listeners>
+<listeners>
 		<listener class-name="utils.Reporting" />
 	</listeners>
-	<test name="Test">
-		<classes>
-			<class name="UserTestCases.GetSingleUserTests" />
-			<class name="UserTestCases.GetMultiUserTest" />
-
-		</classes>
-	</test> 
-</suite> 
+  <test name="Test">
+    <classes>
+      <class name="UserTestCases.GetComments"/>
+      <class name="UserTestCases.PostSingleUser"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

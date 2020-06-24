@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
@@ -58,8 +59,12 @@ public class Reporting extends TestListenerAdapter {
 	}
 
 	public void onTestFailure(ITestResult tr) {
+		
 		logger = extent.createTest(tr.getName()); // create new entry in the report
-		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED)); // send the passed information
+		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
+		logger.log(Status.INFO, MarkupHelper.createLabel("This is a Failed Test", ExtentColor.RED));
+		logger.log(Status.FAIL, tr.getThrowable());
+		
 
 	}
 

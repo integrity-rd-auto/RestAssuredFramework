@@ -6,12 +6,18 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="UserTestCases.GetSingleUserTests">
+      <class name="UserTestCases.GetComments">
         <methods>
           <include name="baseTest"/>
           <include name="getAPITest001"/>
         </methods>
-      </class> <!-- UserTestCases.GetSingleUserTests -->
+      </class> <!-- UserTestCases.GetComments -->
+      <class name="UserTestCases.PostSingleUser">
+        <methods>
+          <include name="baseTest"/>
+          <include name="postAPITest003"/>
+        </methods>
+      </class> <!-- UserTestCases.PostSingleUser -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
