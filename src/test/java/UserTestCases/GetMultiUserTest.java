@@ -1,34 +1,43 @@
 package UserTestCases;
 
-import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import Base.BaseTest;
 import apiConfig.APIPathConfig;
 import apiConfig.HeaderConfig;
+import apiVerifications.APIVerification;
 import io.restassured.RestAssured;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 
 public class GetMultiUserTest extends BaseTest {
-	
+
+	@BeforeClass
+
+	public void responseSetUp() {
+
+		response = RestAssured.given().headers(HeaderConfig.defaultHeaders()).when().get(APIPathConfig.GET_LIST_USERS);
+	}
+
 	@Test
 
-	public void getAPITest002() {
-		
+	public void validateResponseCode() {
+
+		APIVerification.responseCodeValiddation(response, 200);
+	}
+
+	@Test
+
+	public void validateResponseBody() {
+
 		logger.info("###### getAPITest002 Starts ######");
+		APIVerification.validateJsonObjectStringBody(response, "data.id[1]", "2");
 
-		Response response = RestAssured.given().headers(HeaderConfig.defaultHeaders()).when().get(APIPathConfig.GET_LIST_USERS);
-		String s = response.getBody().asString();
+	}
 
-		JsonPath json = new JsonPath(s);
+	@Test
 
-		Assert.assertEquals("8",json.getString("data.id[1]"));
-		
-		Assert.assertEquals(response.getStatusCode(),200);
-		
-		Assert.assertEquals(response.getHeader("Server"),"cloudflare");
+	public void validateResponseHeader() {
 
+		APIVerification.validateHeadersBody(response, "Server", "nginx/1.16.0");
 	}
 
 }

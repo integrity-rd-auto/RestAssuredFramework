@@ -1,4 +1,5 @@
 package UserTestCases;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import Base.BaseTest;
@@ -38,4 +39,12 @@ public class GetComments extends BaseTest {
 
 	}
 
+	@Test
+
+	public void validateResponseBody() {
+
+		APIVerification.validateJsonArrayStringBody(response, 0, "body", "some comment");
+		APIVerification.validateJsonArrayIntBody(response, 0, "id", 1);
+		logger.info("###### getAPITest001 Ends ######");
+	}
 }

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="UserTestCases.GetComments">
+      <class name="UserTestCases.PostSingleUserUsingHashMap">
         <methods>
           <include name="baseTest"/>
-          <include name="getRequest"/>
-          <include name="validateResponseTime"/>
+          <include name="validateStatusCode"/>
+          <include name="postRequest"/>
         </methods>
-      </class> <!-- UserTestCases.GetComments -->
+      </class> <!-- UserTestCases.PostSingleUserUsingHashMap -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

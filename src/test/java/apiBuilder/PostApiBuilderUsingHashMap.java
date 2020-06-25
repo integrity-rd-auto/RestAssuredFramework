@@ -3,7 +3,7 @@ package apiBuilder;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PostApiBuilder {
+public class PostApiBuilderUsingHashMap {
 
 	public static Map<String, String> payLoad(String id, String title,String author) {
 

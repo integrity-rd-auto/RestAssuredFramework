@@ -15,6 +15,16 @@ public class JavaUtil {
 		return id;
 
 	}
+	
+	public static int randomintNumber() {
+
+		Random number = new Random();
+		int intid = number.nextInt(1000);
+		//String id = Integer.toString(intid);
+
+		return intid;
+
+	}
 	public static String randomString() {
 
 		String randomString = RandomStringUtils.randomAlphabetic(1);
