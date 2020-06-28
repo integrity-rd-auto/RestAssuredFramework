@@ -42,6 +42,8 @@ public class Reporting2 extends TestListenerAdapter {
 	}
 
 	private static String getResultPath() {
+		
+		System.out.println("Hello World")
 
                 System.out.println("Hi World")
 
