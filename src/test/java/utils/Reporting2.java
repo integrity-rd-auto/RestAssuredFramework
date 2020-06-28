@@ -42,6 +42,8 @@ public class Reporting2 extends TestListenerAdapter {
 	}
 
 	private static String getResultPath() {
+		
+		System.out.println("Hello World")
 
 		resultpath = "test";// new SimpleDateFormat("yyyy-MM-dd hh-mm.ss").format(new Date());
 		if (!new File(resultpath).isDirectory()) {
